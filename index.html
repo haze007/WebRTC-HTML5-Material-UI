@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video Caller example</title>
+<script src="jquery-1.11.0.min.js"></script>
+<script src="peer.min.js"></script>
+<link rel="stylesheet" href="css/material.css"/>
+<script src="myscript.js"></script>
+</head>
+<body style="background-color: black">
+
+<!-- The Action toolbar -->
+<div noprint class="toolbar bg-blue-500 color-white editor-toolbar">
+<span class="navbar-to-right">
+Your ID: <span id="my-id">...</span>&nbsp;&nbsp;
+				<input type="text" class="text-input" placeholder="Enter ID" id="callto-id">
+                <button href="#" class="button raised bg-green-500 color-white" id="make-call">Call</button>
+                <button href="#" class="button raised bg-red-500 color-white" id="end-call">End</button></div>
+                </span>
+     </div>
+     <!-- The Action toolbar ends -->
+    <!-- Video Area -->
+    <div id="video-container">
+        <video id="their-video" autoplay class="their-video" style="-webkit-box-flex: 1; -moz-box-flex: 1;-o-box-flex: 1;box-flex: 1;-webkit-flex: 1 1 100%;-ms-flex: 1 1 100%;flex: 1 1 100%;width: 100%;max-height: 90%;object-fit: cover;"></video>
+        <video id="my-video" autoplay style="margin: 5px 0; height: 100%;"></video>
+        
+    </div>
+    <!-- End Video Area -->
+        
+</div>
+</body>
+</html>
